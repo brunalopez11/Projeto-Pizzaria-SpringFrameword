@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio - Pizzaria Delícia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Pizzaria Delícia</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="pedido.html">Resumo</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cardapio section">
+    <div class="container">
+      <h2>Monte seu pedido</h2>
+      <form id="form-pedido" class="pedido-form">
+        <div class="form-group">
+          <label for="pizza">Escolha a pizza:</label>
+          <select id="pizza" name="pizza">
+            <option value="Mussarela|30">Mussarela - R$30</option>
+            <option value="Calabresa|35">Calabresa - R$35</option>
+            <option value="Portuguesa|40">Portuguesa - R$40</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tamanho:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="tamanho" value="Pequena|0" checked> Pequena</label>
+            <label><input type="radio" name="tamanho" value="Média|5"> Média (+R$5)</label>
+            <label><input type="radio" name="tamanho" value="Grande|10"> Grande (+R$10)</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Adicionais:</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="adicional" value="Borda Recheada|5"> Borda Recheada</label>
+            <label><input type="checkbox" name="adicional" value="Extra Queijo|7"> Extra Queijo</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn">Finalizar Pedido</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
